@@ -1,0 +1,15 @@
+:root {
+  --red-color: #b82a26;
+  --custom-black: #1d212a;
+}
+
+@mixin defaultComponentSize($mobile:false) {
+  @if $mobile {
+    padding: 92px 0;
+  }
+  @else {
+    min-height: 100vh;
+    width: 100%;
+    padding: 92px 25px;
+  }
+}
